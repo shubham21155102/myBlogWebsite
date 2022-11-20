@@ -1,4 +1,11 @@
 {
+  "version": 2,
+  "name": "native-server",
+  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/server.js" }]
+}
+
+{
   "name": "ejs-challenge",
   "version": "1.0.0",
   "main": "app.js",
